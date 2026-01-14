@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Box } from './Components/box/box'
 
 @Component({
-  selector: 'app-home-page',
-  imports: [],
+  selector: 'home-page',
+  imports: [Box],
   templateUrl: './home-page.html'
 })
 export class HomePage {
