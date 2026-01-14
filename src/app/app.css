@@ -1,0 +1,10 @@
+main::before {
+  content: '';
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  right: 0;
+  height: 100px; /* altezza della sfumatura */
+  background: linear-gradient(to bottom, transparent, white 40%);
+  pointer-events: none;
+}

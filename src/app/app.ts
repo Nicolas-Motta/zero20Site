@@ -5,7 +5,8 @@ import { NavBar } from './Components/nav-bar/nav-bar';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NavBar],
-  templateUrl: './app.html'
+  templateUrl: './app.html',
+  styleUrls: ['./app.css']
 })
 export class App {
   	protected readonly title = signal('zero20site');
