@@ -1,12 +1,10 @@
 export default {
+  darkMode: 'class',
   content: [
-    "./src/**/*.{html,ts}",
-    "./node_modules/flowbite/**/*.js"
+    "./src/**/*.{html,ts}"
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  plugins: [],
 }
