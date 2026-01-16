@@ -38,7 +38,7 @@ export class DarkService {
         if (isPlatformBrowser(this.platformId)) {
             this.isDark.set(window.matchMedia('(prefers-color-scheme: dark)').matches);
             //// Debug
-            console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
+            ////console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
         }
 
         this.applyDarkMode();
