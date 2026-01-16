@@ -1,0 +1,21 @@
+.elemento-animato {
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInSlideUp 0.8s ease-out forwards; 
+    animation-delay: calc(var(--item-index) * 1.2s);
+    /* Puoi aggiungere un animation-delay se vuoi far comparire gli elementi in sequenza */
+    /* animation-delay: 0.2s; */
+}
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Esempio di come potresti usarlo in una lista */
+.lista-elementi .elemento-animato {
+    /* Applica un delay progressivo agli elementi della lista */
+    animation-delay: calc(var(--item-index) * 0.1s);
+}
